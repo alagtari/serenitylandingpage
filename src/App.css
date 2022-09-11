@@ -1,38 +1,240 @@
-.App {
-  text-align: center;
+.app{
+  height: 100vh;
+  
+}
+.navbarr{
+  padding: 5vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navItem{
+  font-size: .9rem;
+  font-weight: 500;
+  color: white;
+  margin-left: 2vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navItems{
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.brandLogo{
+  margin-right: 30%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-left: 17%;
+}
+
+.homeSection {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 10%;
+}
+.homeSectionText {
+  flex: 1;
+  margin: 10px;
+  padding: 0 3vw;
+  font-size: 3rem;
+  font-weight: 700;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.homeSectionImage {
+  flex: 1;
+  margin: 10px;
+}
+.doctorImage{
+  width: 28vw;
+}
+.sectionTitle{
+  margin-top: 10vh;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sectionTitleBottomBar{
+border-bottom: 2px black solid;
+}
+
+.aboutSection{
+ height: 65vh;
+}
+
+.aboutItem{
+  display: flex;
+  width: 100%;
+}
+.aboutItemText{
+  width: 25vw;
+  margin-top: 5vh;
+  margin-left: 5vw;
+
+}
+.aboutItemImage{
+  width: 30vw;
+  margin-top: 5vh;
+  margin-left: 20vw;
+}
+.aboutItemTitle{
+  font-size: 1.8rem;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 10vh;
+}
+.highlighted{
+  color: blueviolet;
+}
+
+
+.aboutItemDescription{
+  font-size: 1.1rem;
+  line-height: 1.5em;
+  color: gray;
+}
+.servicesSection{
+}
+.serviceItems{
+   padding-top: 10vh;
+   width: 60%;
+   margin-left: 20%;
+}
+.serviceItem{
+  height: 30vh;
+  margin: 1%;
+  background-color: rgb(229, 229, 229);
+  border-radius: 20px;
+  padding-top: 50px;
+}
+.serviceItem:hover{
+  background-color: rgb(210, 210, 210);
+}
+
+.serviceItemTitle{
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-right: 50px;
+margin-left: 30px;
+}
+.serviceItemDescription{
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  margin-right: 50px;
+margin-left: 30px;
+}
+.contactSection{
+  height: 45vh;
+  
+}
+.social{
+  display: flex;
+  width: 50%;
+  margin-left: 40vw;
+  margin-top: 25vh;
+}
+.contactText{
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 1.5vh;
+  margin-right: 20px;
+}
+.socialIcons{
+  display: flex;
+}
+.iconBox{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left:10px ;
+  
+}
+.iconBox:hover{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.copyrights{
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: .8rem;
+  margin:10px 0;
+
+}
+
+@media screen and (max-width: 992px) {
+  .app{
+    height: 70vh;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .navItem{
+    display: none;
+  }
+  .brandLogo{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .sectionTitle{
+    margin-top: 12vh;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+  .doctorImage {
+    display: none;
+  }
+  .homeSectionText {
+    flex: auto;
+    margin: 5px;
+    padding: 0;
+    font-size: 2.7rem;
+    font-weight: 700;
+  }
+  .homeSection {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+  }
+  .aboutSection{
+    height: 45vh;
+   }
+  .aboutItemImage{
+    display: none;
+  }
+  .aboutItemText{
+    width: 90vw;
+    margin-top: 2vh;
+    margin-left: 5vw;
+  
+  }
+  .serviceItem{ 
+    height: 330px;
+    margin-bottom: 20px;
+  }
+  .contactSection{
+    height: 25vh;
+    
+  }
+  .contactText{
+    display: none;
+  }
+  .social{
+  width: 100%;
+  margin-left: initial;
+  display: flex;
+justify-content: center;
+
+  margin-top: 20px;
+  }
+}
+@media screen and (max-height: 900px ) and (min-height: 800px ) {
+  .app {
+   height: 60vh;
+  }
+}
+
+@media screen and (max-height: 1200px ) and (min-height: 1000px ) {
+  .app {
+   height: 40vh;
   }
 }
